@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #34495e;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        .form-control:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+
+        input[type="submit"], button {
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover, button:hover {
+            background-color: #2980b9;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>DATA</h1>
+        <form action="/instant_parking" method="post">
+            <p>User Details</p>
+            <label for="name">Enter your name</label><br>
+            <input type="text" class="form-control" name="name" id="name" placeholder="Name" required><br>
+
+            <p>Vehicle Details</p>
+            <label for="carno">Enter your car number plate</label><br>
+            <input type="text" class="form-control" name="carno" id="carno" placeholder="No plate" required><br>
+
+            <!-- Optional checkbox (commented out for now) -->
+            <!-- <input type="checkbox" required> All the above information is correct -->
+            
+            <input type="submit" value="Book my spot"><br>
+        </form>
+    </div>
+
+    <a href="/home">
+        <button><b>Go Home</b></button>
+    </a>
+</body>
+</html>

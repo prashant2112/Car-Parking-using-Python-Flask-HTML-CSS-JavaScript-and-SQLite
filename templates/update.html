@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update</title>
+</head>
+<body>
+    <body>
+        <form action="/update/{{display.sno}}" method="post" >
+    
+            <p > update User Details </p>
+            <br>
+            Enter your  name
+            <input type="text" class="form-control" name="name"  id="name" value="{{display.NAME}}" placeholder="name" >
+            <br><br>
+            <p > update vehicle details </p>
+            <br>
+            Enter your car no plate  
+            <input type="alphanumeric"class="form-control" name="carno"  id="no plate" value="{{display.CAR_NUMBER}}" placeholder="No plate" >
+            <br>
+            <!-- <input type="checkbox" required> All the above information is correct -->
+            <br>
+            
+                <button type="submit">Update</button>
+            
+        </form>
+    
+    
+</body>
+</html>
